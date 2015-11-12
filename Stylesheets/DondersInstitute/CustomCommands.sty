@@ -1,0 +1,16 @@
+
+\usepackage{ifthen}
+\ProvidesPackage{customcommands}[2015/11/11 v1.0 My own macros]
+
+%%%%%%%%%%%%%%%%%%% Definition of New Commands %%%%%%%%%%%%%%%%%%%%%%%%%
+%Setting this boolean to true, all  newpages are omitted
+\newboolean{savethetrees}
+\newcommand{\savethetrees}{\ifthenelse{\boolean{savethetrees}}
+%statement if true:
+{}
+%statement if false:
+{\newpage}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\def\address{\@ifnextchar[{\@@address}{\@address}}

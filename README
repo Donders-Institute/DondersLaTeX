@@ -1,0 +1,18 @@
+This is a repository with a LaTeX stylesheet for the Donders Institute and contains a suggestion for a file structure. It is not meant to be an official template, but rather a suggestion for if you dare take up the challenge of LaTeX for writing your scientific papers.
+
+The folder structure is as follows
+-Bibliography
+--Bibliography.bib
+-StyleSheets
+--DondersInstitute
+---[contents]
+--elsarticle
+---[contents]
+-Papers
+--ExamplePaper
+---Example_Donders.tex
+---Example_Elsevier.tex
+
+This structure easily facilitates multiple papers that refer to the same bibliography and stylesheets. LaTeX automatically imports only the references from your bibliography file that you're '\cite'ing in your TeX-file.
+Note that the two examples are almost identical and use the same source files, and just use a different style sheet. This generates a paper in the format of a different journal.
+
