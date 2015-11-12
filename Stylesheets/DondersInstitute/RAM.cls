@@ -1040,8 +1040,8 @@ to0pt{\kern0.55\wd0\vrule height0.45\ht0\hss}\box0}}}}
  \setlength{\mylen}{\textheight} \addtolength{\mylen}{-35mm}
  \vspace*{\mylen}
  %todo make sure the following references refer to the files in this directory.
- \includegraphics[height=2.3cm]{../../Stylesheets/Donders/RULogo}\\ \\
-  \includegraphics[height=1.2cm]{../../Stylesheets/Donders/DondersLogo}
+ \includegraphics[height=2.3cm]{../../Stylesheets/DondersInstitute/RULogo}\\ \\
+  \includegraphics[height=1.2cm]{../../Stylesheets/DondersInstitute/DondersLogo}
  \setlength{\mylen}{\textheight} \addtolength{\mylen}{-15mm}
  \vspace*{-\mylen}
 
