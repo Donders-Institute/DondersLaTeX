@@ -1,0 +1,98 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%if you install these packages on your machine, you can remove the relative path
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[11pt]{../../Stylesheets/DondersInstitute/RAM}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Include the packages (in IncludePackages.tex) and some new commands you may
+% find useful (in NewCommands.tex). In SetupPackages.tex, additional set-up for
+% packages that require this can be added.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{Includes/IncludePackages.tex}
+\input{Includes/NewCommands.tex}
+\input{Includes/SetupPackages.tex}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Overwrites and additions specific to this document:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[pdftex]{graphicx}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Define the graphics path (i.e. where you have all your pictures). If you want multiple
+% folders with pictures, do: \graphicspath{{./Images/},{./MoreImages/}}
+\graphicspath{{./Images/}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% BEGIN DOCUMENT 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document} 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Here we define things like the title, the authors, their
+% contact details etcetera.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\title{On Elephants}
+\subtitle{Pink, grey and rainbow elephants}
+\author{Tim and Jelle van Mourik}
+\reportnumber{\today}
+\email{t.vanmourik@donders.ru.nl, jvm502@york.ac.uk}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% This constructs the title page
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\maketitle
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% This starts the main body of the document
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\savethetrees
+\mainmatter
+\savethetrees
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Here go all the chapters we want to include
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{Chapters/Abstract.tex}
+\newpage
+\input{Chapters/Introduction.tex}
+\savethetrees
+\input{Chapters/Methods.tex}
+\savethetrees
+\input{Chapters/Results.tex}
+\savethetrees
+\input{Chapters/Discussion.tex}
+\savethetrees
+\input{Chapters/Conclusion.tex}
+\savethetrees
+\input{Chapters/Acknowledgements.tex}
+\savethetrees
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% This defines the bibliography style (e.g. plain) , and 
+% references the .bib file with all your references.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\bibliographystyle{plain}
+\bibliography{../../Bibliography/Bibliography}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Add some appendices if you like.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\onecolumn
+\input{Chapters/Appendix.tex}
+%\newpage
+%\input{Chapters/Figures}
+
+
+%%%%%%%%%%%%%%%%%%%%%
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%
+

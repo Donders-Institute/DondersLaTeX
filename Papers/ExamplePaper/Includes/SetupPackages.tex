@@ -1,0 +1,28 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% This defines how the numbering works for of equations and figures
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\numberwithin{equation}{section}
+\numberwithin{figure}{section}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% This defines whether we always want to jump to a new page after a
+% section (false) or stay on the same page if possible (true).
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setboolean{savethetrees}{false}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% This sets up the \autoref command, and defines how different types 
+% things (equaitons, figures, sections, etc.) should be referred to. Use
+% \autoref rather than \ref, cause if rocks!
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\chapterautorefname{Chapter}
+\def\figureautorefname{Fig.}
+\def\subfigureautorefname{Fig.}
+\def\subfloatautorefname{Fig.}
+\def\equationautorefname{Eq.}
+\def\sectionautorefname{Sec.}
+\def\subsectionautorefname{Sec.}
+\def\subsubsectionautorefname{Sec.}
