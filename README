@@ -16,4 +16,16 @@ The folder structure is as follows
 This structure easily facilitates multiple papers that refer to the same bibliography and stylesheets. LaTeX automatically imports only the references from your bibliography file that you're '\cite'ing in your TeX-file.
 Note that the two examples are almost identical and use the same source files, and just use a different style sheet. This generates a paper in the format of a different journal.
 
-@TODO in RAM.cls, the Radboud and Donders Logo are referenced in an ugly manner: because RAM is called from the tex file, the files need to be referenced relative to the tex file. Hence, when you move the tex file or rename the directories, the pictures won't be found. No idea how to fix this, sorry.
+
+------------------
+KNOWN BUGS
+------------------
+- In the RAM class, the \autoref{} does not use the correct keyword (but does use the correct number) when referencing a figure that only uses \includegraphics{}. It uses the keyword for the section it's in instead. If the figure uses \subfigure{}, it works fine though.
+
+
+
+------------------
+TODO
+------------------
+
+- In RAM.cls, the Radboud and Donders Logo are referenced in an ugly manner: because RAM is called from the tex file, the files need to be referenced relative to the tex file. Hence, when you move the tex file or rename the directories, the pictures won't be found. No idea how to fix this, sorry.
